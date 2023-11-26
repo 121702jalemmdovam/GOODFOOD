@@ -1,0 +1,15 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+@mixin bg{
+    width: 100%;
+    height: auto;
+    background-color: $bg-color;
+    margin: 20px;
+}
+@mixin size{
+    width: auto;
+    height: auto;
+}

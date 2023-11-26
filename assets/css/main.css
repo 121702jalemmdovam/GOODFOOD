@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#Goodfood {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 20px;
+}
+#Goodfood .container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#Goodfood .container .sideleft {
+  margin: 20px;
+  width: 50%;
+  height: auto;
+  float: left;
+  flex-direction: column;
+  text-align: justify;
+}
+#Goodfood .container .sideleft .text {
+  width: 100%;
+  padding-top: 20px;
+}
+#Goodfood .container .sideleft .text span {
+  font-size: 16px;
+  color: red;
+}
+#Goodfood .container .sideleft .text h2 {
+  padding-top: 20px;
+  font-size: 49px;
+}
+#Goodfood .container .sideleft .text p {
+  width: 90%;
+  padding-top: 20px;
+  font-size: 25px;
+}
+#Goodfood .container .sideleft .picture {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+#Goodfood .container .sideleft .picture .image {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+#Goodfood .container .sideleft .picture .image img {
+  gap: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+#Goodfood .container .sideleft .picture .image span {
+  width: auto;
+  font-size: 20px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 575px) and (max-width: 992px) {
+  #Goodfood .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #Goodfood .container .sideleft {
+    display: block;
+    width: 100%;
+  }
+  #Goodfood .container .sideright {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  #Goodfood .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #Goodfood .container .sideleft {
+    width: 100%;
+    height: 50%;
+  }
+  #Goodfood .container .sideleft .picture {
+    width: 100%;
+    flex-direction: column;
+  }
+  #Goodfood .container .sideleft .picture .image {
+    width: 100%;
+  }
+  #Goodfood .container .sideright {
+    width: 100%;
+    height: 50%;
+  }
+}
+#Food {
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  margin: 20px;
+}
+#Food .container {
+  padding: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Food .container .images {
+  width: 70%;
+  padding-left: 20px;
+  width: 50%;
+  float: left;
+}
+#Food .container .images img {
+  width: 400px;
+  height: auto;
+  padding-bottom: 20px;
+}
+#Food .container .about {
+  padding: 20px;
+  width: 70%;
+  height: auto;
+  float: right;
+  flex-direction: column;
+  text-align: justify;
+}
+#Food .container .about span {
+  font-size: 20px;
+  color: red;
+  padding-top: 20px;
+}
+#Food .container .about h2 {
+  width: 70%;
+  text-align: justify;
+  padding-top: 20px;
+  font-size: 49px;
+}
+#Food .container .about h3 {
+  width: 80%;
+  text-align: justify;
+  font-size: 20px;
+  padding-top: 20px;
+}
+#Food .container .about p {
+  width: 80%;
+  text-align: justify;
+  font-size: 20px;
+  padding-top: 20px;
+}
+#Food .container .about button {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 7px;
+  font-size: 15px;
+  border: 2px solid red;
+  text-align: center;
+  cursor: pointer;
+}
+#Food .container .about button:hover {
+  background-color: orangered;
+  transition: 0.6s;
+}
+
+@media screen and (max-width: 992px) {
+  #Food .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #Food .container .about {
+    display: block;
+    width: 100%;
+  }
+  #Food .container .images {
+    width: 100%;
+  }
+}
